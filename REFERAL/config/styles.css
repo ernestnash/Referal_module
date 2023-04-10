@@ -1,0 +1,251 @@
+
+        *{
+            font-family: 'Poppins', sans-serif, system-ui, -apple-system;
+        }
+
+        body{
+            overflow-x: hidden;
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+            background: url(../files/images/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        a{
+            cursor: pointer;
+        }
+
+        /*Beginning of the head section styling*/
+        .headLinks{
+            background: rgb(2,48,71);
+            height: max-content;
+            width: 100vw;
+            font-size: x-large;
+            padding: 15px;
+            color: white;
+        }
+
+        .headLinks span{
+            color: rgb(251,133,0);
+            font-weight: bold;
+        }
+
+
+
+        .headLinks a{
+            text-decoration: none;
+            color: white;
+            margin-left: 5vw;
+            padding: 5px 10px 5px 10px;
+        }
+
+        .headLinks a:hover{
+            color: rgb(2,48,71);
+            background-color: white;
+            border-radius: 3px;
+            transition: 300ms;
+            transition-delay: 50ms;
+        }
+        /*The end of the head styling*/
+
+
+
+        /*The beginning of the footer styling*/
+        .footer{
+            margin-bottom: 5px;
+            background: rgb(2,48,71);
+            width: 100vw;
+            height: max-content;
+            padding: 10px 10px 5px 10px;
+        }
+
+        .grid{
+            display: grid;
+        }
+
+        .contacts{
+            font-size: 20px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .contacts p{
+            color: #fefae0;
+        }
+
+        .contacts a{
+            text-decoration: none;
+            color: white;
+            padding: 0px 5px 0px 5px;
+            width: max-content;
+        }
+
+        .contacts a:hover{
+            color: black;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        .fa-solid{
+            margin-right: 10px;
+        }
+
+        .fa-brands{
+            margin-right: 10px;
+        }
+
+        .partners{
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .partner{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .partners img{
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .partners p{
+            color: white;
+        }
+
+
+
+        .copyright{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        /*The end of the footer styling*/
+
+
+        /*The beginning of the main section styling*/
+        .main{
+            background-color: rgba(43,45,66,0.4);
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+        }
+
+        .welcome{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .welcome p{
+            margin-top: 40vh;
+        }
+        /*The end of the main section styling*/
+
+
+        /*The beginning of the signup/register page*/
+        .signup_main{
+            display: relative;
+            height: 100vh;
+            width: 100vw;
+            background: url(../files/images/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .signup_form{
+            background: rgba(43,45,66,0.75);
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            color: white;
+        }
+
+        .signup_form input{
+            width: 350px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .signup_form input:required{
+            border: 0px;
+        }
+
+        .signup_form select{
+            width: 350px;
+            height: 35px;
+            border-radius: 5px;
+        }
+
+        .signup_form button{
+            cursor: pointer;
+            height: 30px;
+            width: max-content;
+            font-size: large;
+            background: rgb(2,48,71);
+            color: white;
+            border: 0px;
+        }
+
+        .signup_form a{
+            text-decoration: none;
+            font-size: large;
+
+        }
+
+        .signup_form a:hover{
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+        }
+
+        .grid{
+            display: grid;
+        }
+
+        .patientDetails{
+            grid-row: 1;
+            grid-column: 1;
+            margin-right: 100px;
+        }
+
+        .nextOfKinDetails{
+            grid-row: 1;
+            grid-column: 2;
+        }
+        /*The end of the signup/register page*/
+
+
+
+
+        /*The beginning of the page loading styling*/
+        .loading{
+            background: rgba(43,45,66,0.6);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .loadingMain{
+            margin-top: 20vh;
+        }
+
+        .loading p{
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /*The end of the page loading styling*/
