@@ -63,4 +63,4 @@ We would like to thank the following individuals and organizations for their con
 - Moses Okoth
 - Nashon Ernest
 - Yvonne Nyakeru
--Abraham John
+- Abraham John
