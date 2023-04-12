@@ -7,7 +7,7 @@
         let welcomeText;
 
         let copyright = document.querySelector(".copyright");
-        copyright.textContent = "Ace Software Solutions © "+now.getFullYear();
+        copyright.textContent = "Hospital Referal System © "+now.getFullYear();
         
         let welcome = document.querySelector(".welcome p");
         if(timeNow>=0 && timeNow<12){

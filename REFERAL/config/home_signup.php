@@ -9,6 +9,7 @@ function registerPatient(){
     $patient_phone_no = htmlspecialchars($_POST['patient_phone_no']);
     $patient_residence = htmlspecialchars($_POST['patient_residence']);
     $patient_reg_date = date("Y-m-d H:i:s A");
+    $patient_history = htmlspecialchars($_POST['patient_history']);
 
 //next of kin details capture through post
     $kin_name = htmlspecialchars($_POST['kin_name']);
@@ -100,6 +101,9 @@ if(isset($_POST['patient_name']) && isset($_POST['patient_gender']) && isset($_P
 
                     <p>Alternative Contact</p>
                     <input type="text" placeholder="Next of Kin's Email or Other Contact methods" name="kin_alt_contacts"> <br>
+                </div>
+                <div class="patientHistory">
+                    <textarea name="patient_history" id="" cols="30" rows="10"></textarea>
                 </div>
             </div>
 
