@@ -9,8 +9,8 @@ To get started with the hospital referral system, you will need to:
 1. Install PHP
 2. Install and configure a MySQL database version 8 or above.
 3. Clone the repository to your local machine.
-4. start Apache server 
-5. you can acces the system via http://localhost/ONLINE-REFERAL-SYSTEM/REFERAL/
+4. Start Apache server 
+5. You can acces the system via http://localhost/ONLINE-REFERAL-SYSTEM/REFERAL/
 
 
 ## Features
