@@ -9,7 +9,7 @@ function registerPatient(){
     $patient_phone_no = htmlspecialchars($_POST['patient_phone_no']);
     $patient_residence = htmlspecialchars($_POST['patient_residence']);
     $patient_reg_date = date("Y-m-d H:i:s A");
-    $patient_history = htmlspecialchars($_POST['patient_history']);
+    $patient_investigation = htmlspecialchars($_POST['patient_investigation']);
 
 //next of kin details capture through post
     $kin_name = htmlspecialchars($_POST['kin_name']);
@@ -27,7 +27,7 @@ function registerPatient(){
     if(!$db_connection){
         return("An error has occured when connecting to the Database. Consult the Admin. \nError code: ".mysqli_connect_errno()."\nError message: ".mysqli_connect_error());
     } else{
-        $query = "INSERT INTO PATIENTS_DATA(PATIENT_NAME,PATIENT_GENDER,PATIENT_DOB,PATIENT_ID_METHOD, PATIENT_ID_NO,PATIENT_PHONE_NO,PATIENT_RESIDENCE,REGISTRATION_DATE,KIN_NAME,KIN_RELATIONSHIP,KIN_PHONE_NUMBER,KIN_ALT_CONTACTS) VALUES ('$patient_name','$patient_gender','$patient_dob','$patient_id_method','$patient_id_no','$patient_phone_no','$patient_residence','$patient_reg_date','$kin_name','$kin_rship','$kin_phone_no','$kin_alt_contacts')";
+        $query = "INSERT INTO PATIENTS_DATA(PATIENT_NAME,PATIENT_GENDER,PATIENT_DOB,PATIENT_ID_METHOD, PATIENT_ID_NO,PATIENT_PHONE_NO,PATIENT_RESIDENCE,REGISTRATION_DATE,KIN_NAME,KIN_RELATIONSHIP,KIN_PHONE_NUMBER,KIN_ALT_CONTACTS,PATIENT_INVESTIGATION) VALUES ('$patient_name','$patient_gender','$patient_dob','$patient_id_method','$patient_id_no','$patient_phone_no','$patient_residence','$patient_reg_date','$kin_name','$kin_rship','$kin_phone_no','$kin_alt_contacts','$patient_investigation')";
         
         if(mysqli_query($db_connection,$query)){
             echo '<script> alert \"Patient Registered Successfully\" </script>';
@@ -102,8 +102,11 @@ if(isset($_POST['patient_name']) && isset($_POST['patient_gender']) && isset($_P
                     <p>Alternative Contact</p>
                     <input type="text" placeholder="Next of Kin's Email or Other Contact methods" name="kin_alt_contacts"> <br>
                 </div>
+
+
                 <div class="patientHistory">
-                    <textarea name="patient_history" id="" cols="30" rows="10"></textarea>
+                    <p>Patient Investigation/History</p>
+                    <textarea name="patient_investigation" id="" cols="46" rows="10" placeholder="Describe the patient's current health condition"></textarea>
                 </div>
             </div>
 
