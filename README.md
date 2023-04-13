@@ -31,6 +31,8 @@ The Hospital Referral System is built using the following technologies:
 
 - PHP
 - MySQL
+- JavaScript
+- CSS
 
 <!-- ## Installation and Usage
 
