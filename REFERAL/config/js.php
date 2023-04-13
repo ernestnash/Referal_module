@@ -18,7 +18,7 @@
             welcomeText = "Good Night, welcome to the referal system";
         }
         welcome.textContent = welcomeText;
-        welcome.style = "color: white; font-size: 45px;";
+        welcome.style = "color: #264653; font-size: 25px;";
 
             
 

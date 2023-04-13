@@ -9,13 +9,14 @@
             padding: 0px;
             height: 100%;
             width: 100%;
-            background: url(../files/images/background.jpg);
+            background: white;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         a{
             cursor: pointer;
+            text-decoration: none;
         }
 
         textarea{
@@ -142,22 +143,64 @@
 
         /*The beginning of the main home section styling*/
         .main{
-            background-color: rgba(43,45,66,0.6);
+            /* background-color: rgba(43,45,66,0.6); */
             height: max-content;
             width: 100vw;
-            text-align: center;
+        }
+
+        .userInfo{
+            height: 25px;
+            width: max-content;
+            padding: 15px;
+            color: rgb(2,48,71);
         }
 
         .welcome{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 20px;
         }
 
         .welcome p{
-            margin-top: 40vh;
+            margin-top: 10px;
             font-weight: 550;
             font-size: 40px;
+            color: black;
+        }
+
+        .dashboard{
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 0;
+            flex-shrink: 0;
+            gap: 50px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .dashboard a{
+            text-decoration: none;
+            color: rgb(2,48,71);
+        }
+
+        .dashboardItem{
+            padding: 10px;
+            height: 250px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 4px;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .dashboardItem p{
+            font-size: 60px;
+        }
+
+        .dashboardItem:hover{
+            opacity: 100%;
+            box-shadow: 0px 5px 10px;
+            transition: 200ms;
+            transition-delay: 50ms;
         }
         /*The end of the main home section styling*/
 
