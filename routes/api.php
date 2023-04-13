@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FacilitiesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/InsertFacilities','FacilitiesController@insertfacilities');
+Route::post('/InsertFacilities', [FacilitiesController::class, 'insertfacilities']);
+Route::get('/GetFacilities', [FacilitiesController::class, 'getfacilities']);

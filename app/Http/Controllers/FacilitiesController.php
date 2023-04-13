@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use GuzzleHttp\Client;
 use App\Models\Facilities;
 use Illuminate\Http\Request;
 
@@ -27,5 +28,15 @@ class FacilitiesController extends Controller
         $facilities->parent = $request->input('parent');
         $facilities->save();
         return response()->json($facilities);
+    }
+
+    public function getfacilities(Request $request)
+    {
+        $Client = new Client();
+        $res = $Client->request('GET','http://127.0.0.1:8000/api/GetFacilities');
+        $data = $res->getBody()->getContents();
+        $data = json_decode($data);
+
+        // return view('new',compact('data'));
     }
 }
