@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use GuzzleHttp\Client;
 use App\Models\Facilities;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class FacilitiesController extends Controller
 {
     public function insertfacilities(Request $request)
     {
+
         $facilities = new Facilities();
         $facilities->name = $request->input('name');
         $facilities->abbreviation = $request->input('abbreviation');
@@ -30,13 +32,13 @@ class FacilitiesController extends Controller
         return response()->json($facilities);
     }
 
-    public function getfacilities(Request $request)
+    public function getfacilities()
     {
-        $Client = new Client();
-        $res = $Client->request('GET','http://127.0.0.1:8000/api/GetFacilities');
-        $data = $res->getBody()->getContents();
-        $data = json_decode($data);
-
-        // return view('new',compact('data'));
+        return Facilities::all();
     }
+
+    public function facilitiestable(){
+        $facilities = DB::select('select * from Facilities');
+        return view('dashboard',['facilities'=>$facilities]);
+        }
 }

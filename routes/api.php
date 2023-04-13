@@ -20,4 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/InsertFacilities', [FacilitiesController::class, 'insertfacilities']);
-Route::get('/GetFacilities', [FacilitiesController::class, 'getfacilities']);
+Route::get('GetFacilities', [FacilitiesController::class, 'getfacilities']);
+
+Route::get('/dashboard',[FacilitiesController::class, 'facilitiestable']);
+
