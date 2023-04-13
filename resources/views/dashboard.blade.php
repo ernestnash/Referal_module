@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div id="greetings" class="p-6 text-gray-900">
                     {{__('Hello')}}
-                    {{ Auth::user()->name }} 
+                    {{ Auth::user()->name }}
                     {{ __("You're logged in!") }}
                 </div>
             </div>
