@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('location_desc');
             $table->string('number_of_beds');
             $table->string('number_of_cots');
-            $table->boolean('open_whole_day')->default(0);
-            $table->string('open_whole_week')->default(0);
+            $table->string('open_whole_day');
+            $table->string('open_whole_week');
             $table->string('facility_type');
             $table->string('operation_status');
             $table->string('ward');
