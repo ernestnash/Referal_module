@@ -146,6 +146,7 @@
             /* background-color: rgba(43,45,66,0.6); */
             height: max-content;
             width: 100vw;
+            background: #ffffff;
         }
 
         .userInfo{
@@ -201,6 +202,7 @@
             box-shadow: 0px 5px 10px;
             transition: 200ms;
             transition-delay: 50ms;
+            background: #fefae0;
         }
         /*The end of the main home section styling*/
 
