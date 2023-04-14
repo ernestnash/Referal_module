@@ -1,7 +1,15 @@
 <section class="main">
     <div class="userInfo">
-        <p><i class="fa-solid fa-user"></i>Welcome User,</p>
-        <!-- <?php echo $_SESSION['username']; ?> -->
+        <p>
+            <i class="fa-solid fa-user"></i>
+            <?php 
+                if(isset($_SESSION['username'])){
+                    echo $_SESSION['username']; 
+                } else{
+                    echo "Admin";
+                }
+            ?>
+        </p>
     </div>
  <div class="welcome">
      <p></p>
@@ -10,7 +18,11 @@
  <div class="dashboard">
     <a href="">
         <div class="dashboardItem dashboardItem1 noOfPatients">
-            <p id="countPatients">0</p>
+            <p id="countPatients">
+                <?php
+                    echo countPatients();
+                ?>
+            </p>
             <h3>Number of Patients</h3>
         </div>
     </a>
