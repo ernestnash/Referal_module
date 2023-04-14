@@ -13,41 +13,33 @@ return new class extends Migration
     {
         Schema::create('nhdds', function (Blueprint $table) {
             $table->string('id');
-            $table->string('public access');
-            $table->string('created at');
-            $table->string('updated at');
+            $table->string('public_access');
+            $table->string('created_at');
+            $table->string('updated_at');
             $table->string('created_by_id');
             $table->string('updated_by_id');
-            $table->string('is active');
+            $table->string('is_active');
             $table->string('extras');
             $table->string('uri');
             $table->string('version');
             $table->string('released');
             $table->string('retired');
-            $table->string('is latest version');
-            $table->string('custom validation schema');
-            $table->string('parent_id');
-            $table->string('map type');
-            $table->string('sort weight');
-            $table->string('external id');
+            $table->string('is_latest_version');
+            $table->string('name');
+            $table->string('full_name');
+            $table->string('default_locale');
+            $table->string('supported_locales');
+            $table->string('website');
+            $table->string('description');
+            $table->string('external_id');
+            $table->string('concept_class');
+            $table->string('datatype');
             $table->string('comment');
+            $table->string('parent_id');
             $table->string('versioned_object_id');
             $table->string('mnemonic');
-            $table->string('from_concept_id');
-            $table->string('to_concept_id');
-            $table->string('to_source_id');
-            $table->string('from_source_id');
-            $table->string('from concept code');
-            $table->string('from concept name');
-            $table->string('from source url');
-            $table->string('from source version');
-            $table->string('to concept code');
-            $table->string('to concept name');
-            $table->string('to source url');
-            $table->string('to source version');
             $table->string('counted');
             $table->string('index');
-            $table->timestamps();
         });
     }
 

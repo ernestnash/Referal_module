@@ -14,33 +14,34 @@ class NhddController extends Controller
         foreach($records as $record) {
             $nhdd = new Nhdd;
             $nhdd->id=$record['id'];
-                    $nhdd ->public_access= $record['public_access'];
-                    $nhdd->created_at = $record['created_at'];
-                    $nhdd ->updated_at = $record['updated_at'];
-                    $nhdd->created_by_id =$record['created_by_id'];
-                    'updated_by_id' -> $record['updated_by_id'],
-                    'is_active' -> $record['is_active'],
-                    'extras' -> $record['extras'],
-                    'uri' -> $record['uri'],
-                    'version' -> $record['version'],
-                    'released' -> $record['released'],
-                    'retired' -> $record['retired'],
-                    'is_latest_version' -> $record['is_latest_version'],
-                    'name' -> $record['name'],
-                    'full_name' -> $record['full_name'],
-                    'default_locale' -> $record['default_locale'],
-                    'supported_locales' => $nhdd['supported_locales'],
-                    'website' => $nhdd['website'],
-                    'description' => $nhdd['description'],
-                    'external_id' => $nhdd['external_id'],
-                    'concept_class' => $nhdd['concept_class'],
-                    'datatype' => $nhdd['datatype'],
-                    'comment' => $nhdd['comment'],
-                    'parent_id' => $nhdd['parent_id'],
-                    'versioned_object_id' => $nhdd['versioned_object_id'],
-                    'mnemonic' => $nhdd['mnemonic'],
-                    'counted' => $nhdd['counted'],
-                    'index' => $nhdd['index'];
+            $nhdd->public_access= $record['public_access'];
+            $nhdd->created_at = $record['created_at'];
+            $nhdd->updated_at = $record['updated_at'];
+            $nhdd->created_by_id =$record['created_by_id'];
+            $nhdd->updated_by_id =$record['updated_by_id'];
+            $nhdd->is_active = $record['is_active'];
+            $nhdd->extras = $record['extras'];
+            $nhdd->uri = $record['uri'];
+            $nhdd->version = $record['version'];
+            $nhdd->released = $record['released'];
+            $nhdd->retired = $record['retired'];
+            $nhdd->is_latest_version = $record['is_latest_version'];
+            $nhdd->name = $record['name'];
+            $nhdd ->full_name = $record['full_name'];
+            $nhdd->default_locale = $record['default_locale'];
+            $nhdd ->supported_locales = $record['supported_locales'];
+            $nhdd ->website = $nhdd['website'];
+            $nhdd->description = $nhdd['description'];
+            $nhdd->external_id = $nhdd['external_id'];
+            $nhdd ->concept_class = $nhdd['concept_class'];
+            $nhdd ->datatype = $nhdd['datatype'];
+            $nhdd ->comment = $nhdd['comment'];
+            $nhdd ->parent_id = $nhdd['parent_id'];
+            $nhdd ->versioned_object_id = $nhdd['versioned_object_id'];
+            $nhdd ->mnemonic = $nhdd['mnemonic'];
+            $nhdd ->counted = $nhdd['counted'];
+            $nhdd ->index = $nhdd['index'];
+            $nhdd -> save();
         }
     }
 }
