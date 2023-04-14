@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\FacilitiesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,6 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/Facilitieslist', [FacilitiesController::class, 'facilitiestable']);

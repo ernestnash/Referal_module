@@ -38,7 +38,8 @@ class FacilitiesController extends Controller
     }
 
     public function facilitiestable(){
-        $facilities = DB::select('select * from Facilities');
-        return view('dashboard',['facilities'=>$facilities]);
-        }
+        $data = Facilities::all();
+        return view('facilitieslist',['facilities'=>$data]);
+    }
+
 }
