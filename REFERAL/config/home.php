@@ -38,7 +38,11 @@
     
     <a href="">
         <div class="dashboardItem dashboardItem3 noOfFacilities">
-            <p id="countFacilities">0</p>
+            <p id="countFacilities">
+                <?php
+                    echo countFacilities();
+                ?>
+            </p>
             <h3>Number of Facilities</h3>
         </div>
     </a>
