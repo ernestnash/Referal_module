@@ -64,7 +64,7 @@
     </a>
 
     
-    <a href="">
+    <a href="./search_patient.php">
         <div class="dashboardItem dashboardItem6 findPatient">
             <p><i class="fa-solid fa-magnifying-glass"></i></p>
             <h3>Find a Patient</h3>

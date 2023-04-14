@@ -17,7 +17,7 @@
             <span>ONLINE REFERAL SYSTEM | </span>
             <a href="./index.php">Home</a>
             <a href="./signup.php">Register Patient</a>
-            <a href="./login.php">Patient Login</a>
+            <a href="./login.php">Login</a>
             <a href="./refer.php">Refer Patient</a>
             <a href="./support.php">Support</a>
         </nav>
