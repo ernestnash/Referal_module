@@ -27,6 +27,16 @@
             border-radius: 5px;
         }
 
+        table{
+            border: 2px solid black;
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+
+        td{
+            width: calc(96vw/6);
+        }
+
         /*Beginning of the head section styling*/
         .headLinks{
             background: rgb(2,48,71);
@@ -450,11 +460,48 @@
             height: 100vh;
             width: 100vw;
             background: rgba(43,45,66,0.6);
+            padding: 15px;
+        }
+
+        .grid{
+            display: grid;
         }
 
         .referWelcome{
             color: white;
             font-weight: bold;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: center;
+            justify-content: center;
+        }
+
+        .form input{
+            height: 40px;
+            width: 400px;
+            border-radius: 5px;
+        }
+
+        .form textarea{
+            height: 90px;
+            width: 380px;
+            border-radius: 5px;
+        }
+
+        .form select{
+            height: 45px;
+            width: 410px;
+            border-radius: 5px;
+        }
+
+        .form button{
+            padding: 5px;
+            background: white;
+            color: rgb(2,48,71);
+            border-radius: 6px;
+            cursor: pointer;
         }
         /*The end of the refer page styling*/
 

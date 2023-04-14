@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./config/styles.css">
-    <title>ONLINE REFERAL SYSTEM | Ace Software Solutions</title>
+    <title>e-REFERRAL SYSTEM | TUM Health IT</title>
 </head>
 <body>
     <section class="headLinks">
         <nav>
-            <span>ONLINE REFERAL SYSTEM | </span>
+            <span>e-SERVICE REFERAL SYSTEM | </span>
             <a href="./index.php">Home</a>
             <a href="./signup.php">Register Patient</a>
             <a href="./login.php">Login</a>

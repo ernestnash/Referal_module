@@ -38,8 +38,8 @@
                     header("Location: ./refer.php?message=Successfully+Logged+In");
                     exit();
                 } else{
-                    header("location: ./login.php?message=Incorrect+Login+Credentials");
-                    exit();
+                    // header("location: ./login.php?Incorrect+Login");
+                    // exit();
                 }
             }
         }
